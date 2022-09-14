@@ -12,7 +12,6 @@ public class DragableBehavior : MonoBehaviour
     public Vector3 position;
     
     
-    // Start is called before the first frame update
     void Start()
     {
         _cameraObj = Camera.main;
@@ -24,8 +23,9 @@ public class DragableBehavior : MonoBehaviour
         while (draggable)
         {
             yield return new WaitForFixedUpdate();
+            //Debug.Log("Drag");
             position = _cameraObj.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = position;
+           // transform.position = position;
         }
     }
 
