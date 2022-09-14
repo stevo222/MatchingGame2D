@@ -25,7 +25,7 @@ public class DragableBehavior : MonoBehaviour
             yield return new WaitForFixedUpdate();
             //Debug.Log("Drag");
             position = _cameraObj.ScreenToWorldPoint(Input.mousePosition);
-           // transform.position = position;
+            transform.position = position;
         }
     }
 
