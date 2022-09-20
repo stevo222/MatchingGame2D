@@ -328,9 +328,48 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  repeatEvent:
+      - m_Target: {fileID: 1411583281}
+        m_TargetAssemblyTypeName: CouratineBehavior, Assembly-CSharp
+        m_MethodName: StartCounting
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  startCountEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 11400000, guid: 4b66427c521cad84a86940fa337de019, type: 2}
+        m_TargetAssemblyTypeName: IntData, Assembly-CSharp
+        m_MethodName: SetValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  repeatCountEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 96021508}
+        m_TargetAssemblyTypeName: TextLabelBehaviour, Assembly-CSharp
+        m_MethodName: UpdageLabel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 4b66427c521cad84a86940fa337de019, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: On
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2088391948}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
@@ -343,33 +382,9 @@ MonoBehaviour:
           m_StringArgument: On
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 96021508}
-        m_TargetAssemblyTypeName: TextLabelBehaviour, Assembly-CSharp
-        m_MethodName: UpdageLabel
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 4b66427c521cad84a86940fa337de019, type: 2}
-          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  endEvent:
+  endCountEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 96021506}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: GO!
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2088391948}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
@@ -382,6 +397,22 @@ MonoBehaviour:
           m_StringArgument: Hold
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 96021506}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GO!
+          m_BoolArgument: 0
+        m_CallState: 2
+  repeatUntilFalse:
+    m_PersistentCalls:
+      m_Calls: []
+  canRun: 0
   counterNum: {fileID: 11400000, guid: 4b66427c521cad84a86940fa337de019, type: 2}
   seconds: 1
 --- !u!4 &1411583282
