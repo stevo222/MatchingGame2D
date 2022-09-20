@@ -6,8 +6,9 @@ public class CouratineBehavior : MonoBehaviour
 {
 
 
-    public UnityEvent repeatEvent;
-    public int counterNum = 3;
+    public UnityEvent startEvent, repeatEvent, endEvent;
+    
+    public IntData counterNum;
     public float seconds = 3.8f;
     private WaitForSeconds WfsObj;
     private WaitForFixedUpdate WffuObj;
@@ -16,15 +17,19 @@ public class CouratineBehavior : MonoBehaviour
     {
         WfsObj = new WaitForSeconds(seconds);
         WffuObj = new WaitForFixedUpdate();
+        startEvent.Invoke();
+        yield return WfsObj;
 
-        while (counterNum > 0)
+        while (counterNum.value > 0)
         {
-            Debug.Log(counterNum);
-            yield return WfsObj;
+            //Debug.Log(counterNum);
+            
             repeatEvent.Invoke();
-            counterNum--;
+            counterNum.value--;
+            yield return WfsObj;
             
         }
+        endEvent.Invoke();
         
     }
 
