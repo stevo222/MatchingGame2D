@@ -35,6 +35,14 @@ public class Instantcer : ScriptableObject
         }
 
     }
+    
+    public void CreateInstanceListRandomly(Vector3Lists obj)
+    {
+        numb = Random.Range(0, obj.Vector3List.Count - 1);
+        Instantiate(prefab, obj.Vector3List[numb].value, Quaternion.identity);
+       
+
+    }
 
     
 }
