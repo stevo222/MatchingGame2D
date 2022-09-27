@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class SpriteBehaviorObject : MonoBehaviour
 {
-   private SpriteRenderer _renderObj;
+   public SpriteRenderer _renderObj;
    
 
    private void Awake()

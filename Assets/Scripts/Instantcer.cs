@@ -6,10 +6,12 @@ using UnityEngine;
 public class Instantcer : ScriptableObject
 {
     public GameObject prefab;
+    public GameObject dotprefab;
     private int numb;
     public void CreateInstance()
     {
         Instantiate(prefab);
+        Instantiate(dotprefab);
     }
 
     public void CreateInstance(Vector3Data obj)

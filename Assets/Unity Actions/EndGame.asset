@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 740a02b3f4eb40244897a3da01ae1c4c, type: 3}
-  m_Name: PrefabInstancer
+  m_Script: {fileID: 11500000, guid: 72678774683d3d141ad7193beebafb23, type: 3}
+  m_Name: EndGame
   m_EditorClassIdentifier: 
-  prefab: {fileID: 763255714920346293, guid: 34e644dbf6f70e54ebe754a374f20e56, type: 3}
-  dotprefab: {fileID: 763255714920346293, guid: 808afc3860eeeaf49b815cff36eb3698, type: 3}

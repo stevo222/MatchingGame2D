@@ -8,7 +8,7 @@ public class CouratineBehavior : MonoBehaviour
 
 
     public UnityEvent startEvent, startCountEvent, repeatCountEvent, endCountEvent, repeatUntilFalse;
-    public bool canRun;
+    public bool CanRun { get; set; }
     public IntData counterNum;
     public float seconds = 3.8f;
     private WaitForSeconds WfsObj;
@@ -49,17 +49,18 @@ public class CouratineBehavior : MonoBehaviour
 
     public void StartRepeatUntilFalse()
     {
-        canRun = true;
+        CanRun = true;
         StartCoroutine(RepeatuntilFalse());
     }
     private IEnumerator RepeatuntilFalse()
     {
-        while (canRun)
+        while (CanRun)
         {
             yield return WfsObj;
             repeatUntilFalse.Invoke();
         }
     }
+    
     
 
   

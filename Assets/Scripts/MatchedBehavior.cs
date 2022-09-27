@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class MatchedBehavior : MonoBehaviour
 {
     public ID idObj;
-    public UnityEvent matchEvent, nomatchEvent, nomatchDelayed;
+    public UnityEvent startEvent, matchEvent, nomatchEvent, nomatchDelayed;
 
     private IEnumerator OnTriggerEnter(Collider other)
     {
