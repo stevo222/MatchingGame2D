@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -4991789092424796280, guid: 635cde5e3ec86bc42abca70f02a0660f, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.03756249, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad20e68655d966b4fb3f83240d88eba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _renderObj: {fileID: 0}
+  _renderObj: {fileID: 5268855991207667607}
 --- !u!114 &3127229914925307562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 539b1294386c5644080216c9e5301908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idObj: {fileID: 0}
+  idObj: {fileID: 11400000, guid: 8270d820e9abb9a4aba7dda3b3c86c36, type: 2}
   startEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c489b5a9134e924db4cfd58a301e98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idobj: {fileID: 0}
+  idobj: {fileID: 11400000, guid: 8270d820e9abb9a4aba7dda3b3c86c36, type: 2}
   startEvent:
     m_PersistentCalls:
       m_Calls: []
