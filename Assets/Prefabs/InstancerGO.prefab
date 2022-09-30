@@ -64,13 +64,13 @@ MonoBehaviour:
   startCountEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1726015008513278671}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1726015008513278666}
+        m_TargetAssemblyTypeName: SpriteBehaviorObject, Assembly-CSharp
+        m_MethodName: ChangeRendererColor
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 11400000, guid: d85d15d0994d7d6489961373f0a2d35f, type: 2}
+          m_ObjectArgumentAssemblyTypeName: ColorIDListsData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad20e68655d966b4fb3f83240d88eba1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _renderObj: {fileID: 0}
+  _renderObj: {fileID: 1726015008513278667}
 --- !u!114 &6132733962472565132
 MonoBehaviour:
   m_ObjectHideFlags: 0
