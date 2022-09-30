@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 2710073243556189808}
   - component: {fileID: 1027387973019948978}
   - component: {fileID: -1755702178440705982}
-  - component: {fileID: -7486603049954392849}
   m_Layer: 7
   m_Name: Ring
   m_TagString: Untagged
@@ -192,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 539b1294386c5644080216c9e5301908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idObj: {fileID: 11400000, guid: 3e954fe159a436f4cb5d450d5ca7df4b, type: 2}
+  idObj: {fileID: 0}
   startEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -266,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c489b5a9134e924db4cfd58a301e98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idobj: {fileID: 11400000, guid: 3e954fe159a436f4cb5d450d5ca7df4b, type: 2}
+  idobj: {fileID: 0}
   startEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -299,22 +298,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &-7486603049954392849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763255714920346293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57a0f1ceffd13bd4891bbc7ac2ae277e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idobj: {fileID: 11400000, guid: 3e954fe159a436f4cb5d450d5ca7df4b, type: 2}
-  startEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &1354928525803572479
 PrefabInstance:
   m_ObjectHideFlags: 0
